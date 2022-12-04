@@ -1,0 +1,23 @@
+l=[[10,'b',['dog'],2],[[[25]],'a'],4,5]
+
+l2 = []
+def flatten(n):
+    for i in n :
+        if isinstance(i,list):
+            flatten(i)
+        else:
+            l2.append(i)
+
+flatten(l)
+print(l2)
+
+
+input = [[1, 25], [38, 4], [5, 67, 7]]
+
+input.reverse()
+
+for i in range(len(input)):
+    
+    (input[i])=(input[i])[::-1]
+
+print(input)
